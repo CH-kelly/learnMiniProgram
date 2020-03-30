@@ -1,2 +1,8 @@
-<!--pages/scroll/scroll.wxml-->
-<text>pages/scroll/scroll.wxml</text>
+<scroll-view class="scrollView" scroll-x >
+
+<view class="viewClass" wx:for="{{10}}">{{item}}</view>
+</scroll-view>
+
+
+<view wx:if="{{false}}">隐藏</view>
+<view hidden>hidden隐藏</view>

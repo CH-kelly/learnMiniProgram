@@ -2,7 +2,7 @@
 <text class="title">hello world</text>
 <button size="mini">点击</button>
 
-<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+<view wx:for="{{students}}" wx:key="index">{{index}}-{{item.name}}-{{item.age}}</view>
 
 
 <view>计数器：{{counter}}</view>
@@ -17,3 +17,11 @@ show-menu-by-longpress class="avatarImg"
 <input value="1" type="number" />
 <input placeholder='请输入文字' />
 <input  confirm-type="完成"/>
+
+<!-- 自定义组件 -->
+<my-style />
+
+<view>------------------------------------------------</view>
+<tab-control titles="{{['精选','流行','新款']}}"  bind:itemclick='handleItemclick' />
+
+<button size="mini" bindtap="showActionSheet">showActionSheet</button>

@@ -1,0 +1,11 @@
+<view class="control-lists">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="control-itme {{cuttentIndex === index ? 'active' : ''}}" 
+     bindtap="checkControlItem" 
+     data-index="{{index}}"
+     data-item="{{item}}"
+      >
+      <text class="control-item-text"> {{item}}</text>
+    </view>
+  </block>
+</view>

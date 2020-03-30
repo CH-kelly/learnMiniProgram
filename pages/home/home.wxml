@@ -1,27 +1,5 @@
-<!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">点击</button>
+<!-- 展示轮播图 -->
+<w-swiper banners="{{banners}}" />
 
-<view wx:for="{{students}}" wx:key="index">{{index}}-{{item.name}}-{{item.age}}</view>
-
-
-<view>计数器：{{counter}}</view>
-<button size="mini" bindtap="addCounter">+</button>
-<button size="mini" bindtap="reduceCounter">-</button>
-
-<image src="/assets/img/avatar.jpeg" 
-show-menu-by-longpress class="avatarImg"
-/>
-
-
-<input value="1" type="number" />
-<input placeholder='请输入文字' />
-<input  confirm-type="完成"/>
-
-<!-- 自定义组件 -->
-<my-style />
-
-<view>------------------------------------------------</view>
-<tab-control titles="{{['精选','流行','新款']}}"  bind:itemclick='handleItemclick' />
-
-<button size="mini" bindtap="showActionSheet">showActionSheet</button>
+<!--展示推荐详情-->
+<w-recommend recommends="{{recommends}}" />

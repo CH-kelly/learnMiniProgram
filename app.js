@@ -8,16 +8,16 @@ App({
    */
   onLaunch: function() {
     //1.从缓存中取出token
-    const token = wx.getStorageSync('token');
+    // const token = wx.getStorageSync('token');
     
-    //2.判断是否有token的值，并且验证
-    if (token && token !== '') {
-      this.checkToken(token);
-      console.log('有token：' + token);
-    }else{
-      this.wxlogin();
-      console.log('登录后有token：' + token);
-    }
+    // //2.判断是否有token的值，并且验证
+    // if (token && token !== '') {
+    //   this.checkToken(token);
+    //   console.log('有token：' + token);
+    // }else{
+    //   this.wxlogin();
+    //   console.log('登录后有token：' + token);
+    // }
   },
   //检查登录是否超时
   checkToken(token){

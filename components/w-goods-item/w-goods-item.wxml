@@ -1,0 +1,11 @@
+<view class="goods-item" bindtap="clickGoodsItem" data-id="{{item.iid}}">
+  <image  class="goods-item-image" src="{{item.img}}" mode="widthFix" />
+  <view  class="goods-item-info">
+    <view  class="goods-item-title">{{item.title}}</view>
+    <view  class="goods-item-desc">
+      <text  class="item-price">￥{{item.price}}</text>
+      <image  class="item-image" src="/assets/img/common/collect.svg" />
+      <text  class="item-cfav">{{item.cfav}}</text>
+    </view>
+  </view>
+</view>

@@ -14,13 +14,20 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    isload:false
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    recommendLoadImg(){
+      if (!this.data.isload){
+        //发送事件
+        this.triggerEvent('recommendLoadImg');
 
+        this.data.isload = true;
+      }
+    }
   }
 })

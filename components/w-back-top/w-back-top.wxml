@@ -1,0 +1,3 @@
+<view class="back-top" bindtap="clickBackTop">
+    <image src="/assets/img/common/top.png" />
+</view>

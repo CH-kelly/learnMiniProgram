@@ -3,3 +3,11 @@
     width: 100%;
     height: 540rpx;
 }
+.tabControlFixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}

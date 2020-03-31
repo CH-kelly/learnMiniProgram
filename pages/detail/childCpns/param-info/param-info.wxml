@@ -1,0 +1,24 @@
+<view class="param-info">
+    <view class="param-info-item" >
+<!--        <view wx:for="{{paramInfo.rule}}" wx:key="index">-->
+        <view>
+            <view class="param-info-item-title">{{paramInfo.rule.key}}</view>
+            <view class="param-info-item-item" wx:for="{{paramInfo.rule.tables[0]}}" wx:for-item="n" wx:for-index="i" wx:key="i">
+                <view class="item-text" wx:for="{{n}}" wx:for-item="j" wx:for-index="k" wx:key="k">{{j}}</view>
+            </view>
+            <view class="disclaimer">{{paramInfo.rule.disclaimer}}</view>
+        </view>
+
+    </view>
+    <view class="param-info-item" >
+<!--        <view wx:for="{{paramInfo.info}}" wx:key="index">-->
+        <view>
+            <view class="param-info-item-ititle">{{paramInfo.info.key}}</view>
+            <view class="param-info-item-item" wx:for="{{paramInfo.info.set}}" wx:for-item="n" wx:for-index="i" wx:key="i">
+                <view class="item-key">{{n.key}}</view>
+                <view class="item-style">{{n.value}}</view>
+            </view>
+        </view>
+    </view>
+
+</view>

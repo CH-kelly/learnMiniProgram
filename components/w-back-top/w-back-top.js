@@ -19,6 +19,8 @@ Component({
    */
   methods: {
     clickBackTop(){
+      //发送事件
+      this.triggerEvent('clickBackTop');
       //回到顶部
       wx.pageScrollTo({
         scrollTop: 0,

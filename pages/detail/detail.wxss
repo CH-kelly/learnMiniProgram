@@ -1,1 +1,4 @@
 /* pages/detail/detail.wxss */
+.scroll-view{
+    height: calc(100vh - 50px);
+}

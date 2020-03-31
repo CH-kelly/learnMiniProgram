@@ -1,0 +1,40 @@
+<wxs src="../../../../utils/tool.wxs" module="tool" />
+<view class="shop-info">
+    <view class="shop-info-top">
+        <image src="{{shopInfo.shopLogo}}" />
+        <text>{{shopInfo.name}}</text>
+    </view>
+    <view class="shop-info-center">
+        <view class="center-left">
+            <view class="center-left-left">
+<!--                <view class="center-number">{{shopInfo.cSells}}</view>-->
+                <view class="center-number">{{tool.formatNumber(shopInfo.cSells)}}</view>
+                <view>总销量</view>
+            </view>
+            <view class="center-left-right">
+<!--                <view class="center-number">{{shopInfo.cGoods}}</view>-->
+                <view class="center-number">{{tool.formatNumber(shopInfo.cGoods)}}</view>
+                <view>全部宝贝</view>
+            </view>
+        </view>
+        <view class="center-right">
+            <view wx:for="{{shopInfo.score}}" wx:key="index" class="center-right-item">
+                <text class="center-right-name">{{item.name}}</text>
+                <block wx:if="{{item.isBetter}}">
+                    <text class="score-better">{{item.score}}</text>
+                    <text class="center-right-high" >高</text>
+                </block>
+                <block wx:else>
+
+                    <text class="score-low">{{item.score}}</text>
+                    <text class="center-right-low" >低</text>
+                </block>
+            </view>
+        </view>
+
+    </view>
+    <view class="shop-info-bottom">
+        <view class="shop-info-bottom-item">进店逛逛</view>
+    </view>
+
+</view>

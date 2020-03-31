@@ -1,0 +1,31 @@
+/* pages/detail/childCpns/param-info/param-info.wxss */
+.param-info{
+    padding: 10px;
+    color: #666666;
+    font-size: 26rpx;
+}
+.param-info-item-title{
+    font-size: 32rpx;
+}
+.param-info-item-item{
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+
+}
+.disclaimer{
+    font-size: 20rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+
+}
+.item-text{
+    flex: 1;
+}
+.item-style{
+    color: #ff5777;
+}
+.item-key{
+    width: 200rpx;
+}

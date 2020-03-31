@@ -27,3 +27,9 @@ export function getGoodDetail(iid){
    }
  })
 }
+//推荐数据
+export function getRecommend(){
+  return sendRequest({
+    url:"/recommend"
+  })
+}

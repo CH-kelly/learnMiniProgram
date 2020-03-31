@@ -1,0 +1,18 @@
+<view class="goods-info">
+    <view class="goods-info-desc">
+        <view class="goods-info-desc-start"></view>
+        <view class="goods-info-desc-center">
+            {{goodsInfo.desc}}
+        </view>
+        <view class="goods-info-desc-end"></view>
+    </view>
+    <view class="goods-info-lists">
+        <view  wx:for="{{goodsInfo.detailImage}}" wx:key="index">
+            <view class="item-key">{{item.key}}</view>
+            <view wx:for="{{item.list}}" wx:for-item="n" wx:for-index="i" wx:key="i">
+                <image class="item-image" src="{{n}}" mode="widthFix" />
+            </view>
+        </view>
+    </view>
+
+</view>

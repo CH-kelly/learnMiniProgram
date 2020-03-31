@@ -1,1 +1,23 @@
 
+<scroll-view scroll-y class="scroll-view" bindscroll="monitorScroll" scroll-top="{{top}}" >
+    <!-- 轮播图 -->
+    <d-swiper  banners="{{banners}}" />
+    <!--商品详情-->
+    <d-item-info itemInfo="{{itemInfo}}" />
+
+    <!--店铺详情-->
+    <d-shop-info shopInfo="{{shopInfo}}" />
+
+    <d-goods-info goodsInfo="{{goodsInfo}}" />
+
+    <d-param-info paramInfo="{{paramInfo}}" />
+
+    <d-comment comment="{{comment}}" />
+
+    <w-goods-list goods="{{recommendGoods}}" />
+
+</scroll-view>
+
+<detail-bottom-bar />
+
+<w-back-top wx:if="{{isShowBackTop}}" class="backTop"  bind:clickBackTop="clickBackTop"  />

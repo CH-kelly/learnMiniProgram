@@ -1,2 +1,18 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category-lists">
+    <view class="category-left">
+        <scroll-view scroll-y>
+            <block wx:for="{{cateTitle}}" wx:key="index">
+                <view class="category-left-item {{isActive===index?'active':''}}"
+                    bindtap="clickCateTitle" data-index="{{index}}"  data-maitKey="{{item.maitKey}}"  data-miniWallkey="{{item.miniWallkey}}"
+
+                >
+                    {{item.title}}
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="category-right">
+
+    </view>
+
+</view>

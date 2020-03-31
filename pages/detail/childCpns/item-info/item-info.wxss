@@ -1,0 +1,71 @@
+/* pages/detail/childCpns/item-info/item-info.wxss */
+.item-info{
+  padding: 10px;
+  border-bottom: 10rpx solid #f2f2f2;
+}
+.item-info-top{
+  margin-top: 10rpx;
+}
+.item-info-top text{
+  font-size: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+}
+.item-info-center{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: baseline;
+}
+.lowNowPrice{
+  font-size: 50rpx;
+  color: #ff5777;
+  margin-right: 10rpx;
+}
+.lowPrice{
+  font-size: 24rpx;
+  color: #999999;
+  text-decoration: line-through;
+  margin-right: 10rpx;
+}
+.discountDesc{
+  width: 30px;
+  height: 16px;
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 4px;
+/*  改变位置*/
+  position: relative;
+  top: -10px;
+}
+
+.item-info-bottom{
+  margin-bottom: 30rpx;
+}
+.info-bottom-columns{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  color: #999999;
+  font-size: 22rpx;
+
+  border-bottom: 1px solid #f2f2f2;
+}
+.info-bottom-services{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  color: #666666;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.info-bottom-services image{
+  width: 20rpx;
+  height: 20rpx;
+}

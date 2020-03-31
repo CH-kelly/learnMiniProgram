@@ -1,0 +1,23 @@
+<wxs src="../../../../utils/tool.wxs" module="dataFr" />
+
+<view class="comment-lists">
+    <view class="comment-top">
+        <text>用户评价</text>
+        <text class="more">更多</text>
+    </view>
+    <view class="comment-center" wx:for="{{comment.list}}" wx:key="index">
+        <view class="comment-item-top">
+            <image src="{{item.user.avatar}}" />
+            <text>{{item.user.uname}}</text>
+        </view>
+        <view class="comment-center">
+            <view class="comment-content">{{item.content}}</view>
+            <view class="comment-center-item">
+<!--                <text class="comment-content-create">{{item.created}}</text>-->
+                <text class="comment-content-create">{{dataFr.formatData(item.created,"-")}}</text>
+                <text>{{item.style}}</text>
+            </view>
+        </view>
+
+    </view>
+</view>

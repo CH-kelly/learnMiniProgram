@@ -1,1 +1,27 @@
 /* pages/category/category.wxss */
+.category-lists{
+    display: flex;
+}
+.category-left{
+    width: 30%;
+}
+.category-left-item{
+    height: 100rpx;
+    width: 100%;
+    font-size: 28rpx;
+    color: #666666;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: #f2f2f2;
+}
+.category-left .active{
+    color: #ff5777;
+    background-color: #fff;
+    border-left: 6rpx solid #ff5777;
+    font-weight: 600;
+}
+
+
+.category-right{
+    width: 70%;
+}

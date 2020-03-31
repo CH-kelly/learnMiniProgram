@@ -1,10 +1,17 @@
 // pages/category/category.js
+import {
+  getCategory
+}from "../../service/category"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    isActive:0,
+    cateTitle:[],
+    maitkey:'',
+    miniwallkey:'',
 
   },
 
@@ -12,7 +19,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this._getCategory();
+  },
+  //加载商品分类左边的数据
+  _getCategory(){
+    getCategory().then(res=>{
+      this.setData({
+        cateTitle:res.data.data
+      })
+    })
+  },
+  clickCateTitle(event){
+    console.log(event);
+    const index = event.currentTarget.dataset.index;
+    const maitkey = event.currentTarget.dataset.maitkey;
+    const miniwallkey = event.currentTarget.dataset.miniwallkey;
+    this.setData({
+      isActive: index,
+      maitkey: maitkey,
+      miniwallkey: miniwallkey
+    })
   },
 
   /**

@@ -1,0 +1,26 @@
+<view class="detail-bottom-bar">
+    <view class="bottom-left">
+        <view class="bottom-left-item" bindtap="clickService">
+            <image src="/assets/detail/service.png" />
+            <view>客服</view>
+        </view>
+        <view class="bottom-left-item" bindtap="clickShop">
+            <image src="/assets/detail/shop.png" />
+            <view>店铺</view>
+        </view>
+        <view class="bottom-left-item" bindtap="clickSelect">
+            <image src="/assets/detail/select.png" wx:if="{{!isSelect}}" />
+            <image src="/assets/detail/select_active.png" wx:else />
+            <view>收藏</view>
+        </view>
+    </view>
+    <view class="bottom-right">
+        <view class="bottom-right-add-cart">
+            加入购物车
+        </view>
+        <view class="bottom-right-buy">
+            购买
+        </view>
+    </view>
+
+</view>

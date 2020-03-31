@@ -1,0 +1,39 @@
+<view class="item-info">
+    <view class="item-info-top">
+        <text>{{itemInfo.title}}</text>
+    </view>
+    <view class="item-info-center">
+        <text class="lowNowPrice">{{itemInfo.lowNowPrice}}</text>
+        <text class="lowPrice">{{itemInfo.lowPrice}}</text>
+        <text class="discountDesc" style="background-color:{{itemInfo.discountBgColor}}">{{itemInfo.discountDesc}}</text>
+    </view>
+    <view class="item-info-bottom">
+        <view class="info-bottom-columns">
+            <view wx:if="{{itemInfo.columns.length >= 1}}">
+                <text>{{itemInfo.columns[0]}}</text>
+            </view>
+            <view wx:if="{{itemInfo.columns.length >= 2}}">
+                <text>{{itemInfo.columns[1]}}</text>
+            </view>
+            <view wx:if="{{itemInfo.services.length >= 5}}">
+                <text>{{itemInfo.services[4].name}}</text>
+            </view>
+
+
+<!--            <view wx:for="{{itemInfo.columns}}" wx:key="index">-->
+<!--                <text>{{item}}</text>-->
+<!--            </view>-->
+
+        </view>
+        <view class="info-bottom-services">
+            <view wx:for="{{itemInfo.services}}" wx:key="index" hidden="{{index == itemInfo.services.length -1 ? true:false}}">
+                <block wx:if="{{index <4}}">
+                    <image src="{{item.icon}}" wx:if="{{item.icon}}" />
+                    <text>{{item.name}}</text>
+                </block>
+            </view>
+        </view>
+
+    </view>
+
+</view>

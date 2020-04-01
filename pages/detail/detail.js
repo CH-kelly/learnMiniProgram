@@ -45,6 +45,8 @@ Page({
 
             const itemInfo = {};
             itemInfo.title = result.itemInfo.title;
+            itemInfo.desc = result.itemInfo.desc;
+            itemInfo.imUrl = result.itemInfo.imUrl;
             itemInfo.discountBgColor = result.itemInfo.discountBgColor;
             itemInfo.discountDesc = result.itemInfo.discountDesc;
             itemInfo.lowNowPrice = result.itemInfo.lowNowPrice;
@@ -95,6 +97,44 @@ Page({
     clickBackTop() {
         this.setData({
             top: 0
+        })
+    },
+    clickAddCart(){
+        const cart = wx.getStorageSync('cartList');
+        const lists = {};
+        lists.title = this.data.itemInfo.title;
+        lists.desc = this.data.itemInfo.desc;
+        lists.lowNowPrice = this.data.itemInfo.lowNowPrice;
+        lists.imUrl = this.data.itemInfo.imUrl;
+        lists.iid = this.data.iid;
+        lists.selected = true;
+        lists.count = 1;
+
+        if(cart){ //如果有cart就判断是否有iid相同得
+            for (var i=0;i<cart.length;i++){
+                if(cart[i].iid === lists.iid){
+                    cart[i].count +=1
+                }
+            }
+            try {
+                wx.setStorageSync('cartList', cart)
+            } catch (e) {
+                console.log(e);
+            }
+        }else{
+            const cartList = [];
+            cartList.push(lists);
+            console.log(cartList);
+            try {
+                wx.setStorageSync('cartList', cartList)
+            } catch (e) {
+                console.log(e);
+            }
+        }
+        wx.showToast({
+            title: '添加成功',
+            icon: 'success',
+            duration: 2000
         })
     },
     /**

@@ -1,5 +1,5 @@
 <view class="goods-item" bindtap="clickGoodsItem" data-id="{{item.iid}}">
-  <image  class="goods-item-image" src="{{item.img}}" mode="widthFix" />
+  <image  class="goods-item-image" src="{{item.img}}" mode="widthFix" lazy-load />
   <view  class="goods-item-info">
     <view  class="goods-item-title">{{item.title}}</view>
     <view  class="goods-item-desc">

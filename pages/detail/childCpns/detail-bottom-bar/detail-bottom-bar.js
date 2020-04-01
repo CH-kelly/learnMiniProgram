@@ -24,14 +24,14 @@ Component({
                 icon: 'loading',
                 duration: 2000
             })
-        },//客服
+        },//店铺
         clickShop() {
             wx.showToast({
                 title: '正在开发中',
                 icon: 'loading',
                 duration: 2000
             })
-        },//客服
+        },//收藏
         clickSelect() {
             const isSelct = !this.data.isSelect;
 
@@ -44,6 +44,12 @@ Component({
                 icon: 'success',
                 duration: 2000
             })
+        },
+        //加入购物车
+        clickAddCart(){
+            //传递给上级
+            this.triggerEvent('clickAddCart')
+
         }
     }
 })

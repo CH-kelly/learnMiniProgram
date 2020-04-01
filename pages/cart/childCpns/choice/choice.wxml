@@ -1,0 +1,3 @@
+<view class="cart-choice {{selected ? 'selected' : ''}}">
+    <image src="/assets/cart/tick.svg"  wx:if="{{selected}}"/>
+</view>

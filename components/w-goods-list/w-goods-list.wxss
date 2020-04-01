@@ -3,7 +3,8 @@
     /* padding-top: 20rpx; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
+    justify-content: space-between;
 }
 .goods-list > .item{
     width: 47%;

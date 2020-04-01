@@ -1,0 +1,8 @@
+<view class="cart-list">
+    <block wx:for="{{cartList}}" wx:key="index">
+        <view class="cart-list-item">
+
+        </view>
+    </block>
+
+</view>

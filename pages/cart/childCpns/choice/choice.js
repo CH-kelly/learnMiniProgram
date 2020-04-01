@@ -1,12 +1,12 @@
-// components/w-goods-list/w-goods-list.js
+// pages/cart/childCpns/choice/choice.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    goods:{
-      type:Array,
-      value:[]
+    selected: {
+      type:Boolean,
+      value:true
     }
   },
 
@@ -21,10 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-   
-  },
-  //组件样式隔离
-  options:{
-    styleIsolation:"apply-shared"
+
   }
 })

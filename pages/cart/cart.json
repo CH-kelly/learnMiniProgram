@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "catr-list":"./childCpns/catr-list/catr-list"
+  },
   "navigationBarTitleText": "购物车"
 }

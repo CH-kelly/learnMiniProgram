@@ -1,9 +1,14 @@
 /* pages/category/category.wxss */
 .category-lists{
     display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 .category-left{
     width: 30%;
+}
+.category-left-scroll{
+    height: 100%;
 }
 .category-left-item{
     height: 100rpx;
@@ -24,4 +29,23 @@
 
 .category-right{
     width: 70%;
+}
+.category-right-cate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #666666;
+}
+.category-right-item{
+    width: 33%;
+    text-align: center;
+    margin-top: 20rpx;
+}
+.category-right-item image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.goods-list > .item{
+    height: 460rpx !important;
 }

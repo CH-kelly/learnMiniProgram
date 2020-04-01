@@ -1,6 +1,6 @@
 <view class="category-lists">
     <view class="category-left">
-        <scroll-view scroll-y>
+        <scroll-view scroll-y class="category-left-scroll">
             <block wx:for="{{cateTitle}}" wx:key="index">
                 <view class="category-left-item {{isActive===index?'active':''}}"
                     bindtap="clickCateTitle" data-index="{{index}}"  data-maitKey="{{item.maitKey}}"  data-miniWallkey="{{item.miniWallkey}}"
@@ -12,7 +12,23 @@
         </scroll-view>
     </view>
     <view class="category-right">
+        <scroll-view scroll-y class="category-left-scroll">
+<!--          分类得图标  -->
+            <view class="category-right-cate">
+                <block wx:for="{{maitkeyLists}}" wx:key="index">
+                    <view class="category-right-item">
+                        <image src="{{item.image}}" lazy-load />
+                        <view>{{item.title}}</view>
+                    </view>
+                </block>
+            </view>
+<!--          综合\  -->
+            <w-tab-control titles="{{titles}}" bind:itemclick="tabControlClick" />
 
+            <w-goods-list goods="{{miniwallkeyLists[cuttentIndex]}}"  />
+
+
+        </scroll-view>
     </view>
 
 </view>

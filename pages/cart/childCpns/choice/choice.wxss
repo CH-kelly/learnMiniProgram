@@ -1,0 +1,10 @@
+
+.cart-choice {
+    width: 20rpx;
+    height: 20rpx;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+}
+.selected{
+    background-color: #ff5777;
+}

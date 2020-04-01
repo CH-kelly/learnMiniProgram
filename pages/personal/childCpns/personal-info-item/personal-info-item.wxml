@@ -1,0 +1,14 @@
+<view class="personal-info-item">
+<!--    <view class="info-item">-->
+<!--        <view class="info-item-image">-->
+<!--            <image src="/assets/personal/message.png" />-->
+<!--        </view>-->
+<!--        <view class="info-item-message">我的消息</view>-->
+<!--    </view> -->
+    <view class="info-item" wx:for="{{lists}}" wx:key="{{index}}">
+        <view class="info-item-image">
+            <image src="/assets/personal/{{item.icon}}" />
+        </view>
+        <view class="info-item-message">{{item.msg}}</view>
+    </view>
+</view>

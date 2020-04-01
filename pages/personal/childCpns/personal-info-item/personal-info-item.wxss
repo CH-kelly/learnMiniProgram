@@ -1,0 +1,29 @@
+.personal-info-item{
+    border-top: 10rpx solid #f2f2f2;
+}
+.info-item{
+    /*padding: 20rpx;*/
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    color: #666666;
+}
+.info-item-image>image{
+    width: 40rpx;
+    height: 40rpx;
+    /*margin-right: 20rpx;*/
+}
+.info-item-image{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+}
+.info-item-message{
+    width: 90%;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+    border-bottom: 1px solid #f2f2f2;
+}

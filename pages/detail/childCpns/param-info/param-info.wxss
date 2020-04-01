@@ -24,7 +24,7 @@
     flex: 1;
 }
 .item-style{
-    color: #ff5777;
+    color: #ff8198;
 }
 .item-key{
     width: 200rpx;

@@ -22,7 +22,7 @@
 .tab-bar-right{
     width: 30%;
     color: #ffffff;
-    background-color: #ff5777;
+    background-color: #ff8198;
     text-align: center;
     line-height: 80rpx;
 }

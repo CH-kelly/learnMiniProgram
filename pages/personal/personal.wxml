@@ -1,2 +1,13 @@
-<!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view>
+    <view class="personal-top">
+        <image src="{{userAvatar}}" />
+        <view wx:if="{{isLogin}}" >
+            <button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">登录</button>
+        </view>
+        <view wx:else >{{userName}}</view>
+    </view>
+    <personal-account />
+    <personal-info-item lists="{{item1}}" />
+    <personal-info-item lists="{{item2}}" />
+
+</view>

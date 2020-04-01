@@ -51,7 +51,7 @@
 }
 .cart-list-item-lowNowPrice > .lowNowPrice{
     font-size: 32rpx;
-    color: #ff5777;
+    color: #ff8198;
 }
 .cart-list-item-lowNowPrice > .count{
     position: absolute;

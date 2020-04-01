@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "personal-account": "./childCpns/personal-account/personal-account",
+    "personal-info-item": "./childCpns/personal-info-item/personal-info-item"
+  },
   "navigationBarTitleText": "用户中心"
 }

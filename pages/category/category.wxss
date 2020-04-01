@@ -20,9 +20,9 @@
     background-color: #f2f2f2;
 }
 .category-left .active{
-    color: #ff5777;
+    color: #ff8198;
     background-color: #fff;
-    border-left: 6rpx solid #ff5777;
+    border-left: 6rpx solid #ff8198;
     font-weight: 600;
 }
 

@@ -1,1 +1,14 @@
 /* pages/personal/personal.wxss */
+.personal-top{
+    display: flex;
+    align-items: center;
+    background-color: #ff8198;
+    padding: 20rpx;
+    color: #ffffff;
+}
+.personal-top > image{
+  border-radius: 50%;
+    width: 160rpx;
+    height: 160rpx;
+    margin-right: 20rpx;
+}

@@ -1,0 +1,24 @@
+<view class="personal-account">
+    <view class="account-item">
+       <view  class="account-item-title">
+           <text class="account-item-title-number">0.00</text>
+           <text>元</text>
+       </view>
+        <view class="account-item-desc">我的余额</view>
+    </view>
+    <view class="account-item">
+        <view  class="account-item-title">
+            <text class="account-item-title-number">0</text>
+            <text>个</text>
+        </view>
+        <view class="account-item-desc">我的优惠</view>
+    </view>
+    <view class="account-item">
+        <view  class="account-item-title">
+            <text class="account-item-title-number">0</text>
+            <text>分</text>
+        </view>
+        <view class="account-item-desc">我的积分</view>
+    </view>
+
+</view>

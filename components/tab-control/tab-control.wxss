@@ -10,9 +10,9 @@
   flex: 1
 }
 .active{
-  color: #ff5777;
+  color: #ff8198;
 }
 .active .control-item-text{
   padding: 20rpx 16rpx;
-  border-bottom: 6rpx solid #ff5777
+  border-bottom: 6rpx solid #ff8198
 }

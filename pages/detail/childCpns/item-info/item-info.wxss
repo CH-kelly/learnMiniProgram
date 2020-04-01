@@ -22,7 +22,7 @@
 }
 .lowNowPrice{
   font-size: 50rpx;
-  color: #ff5777;
+  color: #ff8198;
   margin-right: 10rpx;
 }
 .lowPrice{

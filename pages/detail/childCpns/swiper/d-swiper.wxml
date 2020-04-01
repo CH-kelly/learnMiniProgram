@@ -1,5 +1,5 @@
 <swiper class="banner-swiper" autoplay  indicator-dots
-  indicator-active-color="#ff5777"  interval="3000" circular
+  indicator-active-color="#ff8198"  interval="3000" circular
 
  >
   <block wx:for="{{banners}}" wx:key="index">

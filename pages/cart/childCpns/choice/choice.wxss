@@ -7,7 +7,7 @@
     position: relative;
 }
 .selected{
-    background-color: #ff5777;
+    background-color: #ff8198;
 }
 .cart-choice > image{
   width: 40rpx;

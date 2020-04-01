@@ -9,12 +9,12 @@
     "components/w-swiper/w-swiper"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarBackgroundColor": "#ff8198",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#666666",
-    "selectedColor": "#ff5777",
+    "selectedColor": "#ff8198",
     "list": [
       {
         "pagePath": "pages/home/home",

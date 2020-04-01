@@ -49,3 +49,7 @@
 .goods-list > .item{
     height: 460rpx !important;
 }
+.goods-list{
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}

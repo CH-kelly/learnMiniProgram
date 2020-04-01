@@ -105,18 +105,32 @@ Page({
         lists.title = this.data.itemInfo.title;
         lists.desc = this.data.itemInfo.desc;
         lists.lowNowPrice = this.data.itemInfo.lowNowPrice;
-        lists.imUrl = this.data.itemInfo.imUrl;
+        lists.imUrl = this.data.banners[0];
         lists.iid = this.data.iid;
         lists.selected = true;
         lists.count = 1;
+        if(!lists.title){
+
+            wx.showToast({
+                title: '商品添加失败',
+                icon: 'none',
+                duration: 2000
+            })
+            return ;
+        }
 
         if(cart){ //如果有cart就判断是否有iid相同得
+            var flag = false;
             for (var i=0;i<cart.length;i++){
                 if(cart[i].iid === lists.iid){
+                    flag = true
                     cart[i].count +=1
                 }
             }
             try {
+                if(flag === false){
+                    cart.push(lists);
+                }
                 wx.setStorageSync('cartList', cart)
             } catch (e) {
                 console.log(e);

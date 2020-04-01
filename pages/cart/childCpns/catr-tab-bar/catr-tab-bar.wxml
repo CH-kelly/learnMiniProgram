@@ -1,0 +1,13 @@
+<view class="cart-tab-bar">
+    <view class="tab-bar-left" bindtap="clickAllSelect">
+        <choice selected="{{AllSelected}}"  />
+        <text>全选</text>
+    </view>
+    <view class="tab-bar-center">
+        合计:￥{{allPrice}}
+    </view>
+    <view class="tab-bar-right">
+        去结算({{allCount}})
+    </view>
+
+</view>

@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "catr-list":"./childCpns/catr-list/catr-list"
+    "cart-list":"./childCpns/catr-list/catr-list",
+    "cart-tab-bar":"./childCpns/catr-tab-bar/catr-tab-bar"
   },
   "navigationBarTitleText": "购物车"
 }

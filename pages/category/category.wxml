@@ -25,7 +25,7 @@
 <!--          综合\  -->
             <w-tab-control titles="{{titles}}" bind:itemclick="tabControlClick" />
 
-            <w-goods-list goods="{{miniwallkeyLists[cuttentIndex]}}"  />
+            <w-goods-list goods="{{miniwallkeyLists[cuttentIndex]}}" class="goods-list"  />
 
 
         </scroll-view>

@@ -1,3 +1,7 @@
 
 
-<catr-list cartList="{{cartList}}" />
+<cart-list cartList="{{cartList}}" bind:clickCartItem="clickCartItem"
+           bind:clickCountReduce="clickCountReduce"
+           bind:clickCountAdd="clickCountAdd" />
+
+<cart-tab-bar AllSelected="{{AllSelected}}" allPrice="{{allPrice}}" allCount="{{allCount}}" bind:clickAllSelect="clickAllSelect" />

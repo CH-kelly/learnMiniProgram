@@ -1,7 +1,26 @@
 <view class="cart-list">
     <block wx:for="{{cartList}}" wx:key="index">
         <view class="cart-list-item">
-
+            <view class="cart-list-item-choice" bindtap="clickCartItem" data-iid="{{item.iid}}">
+                <choice selected="{{item.selected}}" />
+            </view>
+            <view class="cart-list-item-img">
+                <image src="{{item.imUrl}}" mode="widthFix"/>
+            </view>
+            <view class="list-item-desc">
+                <view class="cart-list-item-title">{{item.title}}</view>
+                <view class="cart-list-item-desc">{{item.desc}}</view>
+                <view class="cart-list-item-lowNowPrice">
+                    <view class="lowNowPrice">{{item.lowNowPrice}}</view>
+                    <view class="count">
+                        <text  class="countReduce" hover-class="clickCount" bindtap="clickCountReduce"
+                               data-iid="{{item.iid}}"   data-count="{{item.count}}">-</text>
+                        <text   class="count-count">{{item.count}}</text>
+                        <text  class="countReduce" hover-class="clickCount" bindtap="clickCountAdd"
+                               data-iid="{{item.iid}}"   data-count="{{item.count}}">+</text>
+                    </view>
+                </view>
+            </view>
         </view>
     </block>
 
